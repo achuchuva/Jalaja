@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Player_01_Damage_0: 2587205383406488893
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

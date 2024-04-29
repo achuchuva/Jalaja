@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Med_Ship_Flame_0: 7839281494593883922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

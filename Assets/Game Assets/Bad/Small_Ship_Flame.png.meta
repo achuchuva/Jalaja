@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Small_Ship_Flame_0: -401486935204645678
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

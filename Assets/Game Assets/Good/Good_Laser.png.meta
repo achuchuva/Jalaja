@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Good_Laser_0: 655993043586163588
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
