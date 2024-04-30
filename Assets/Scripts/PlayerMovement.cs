@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private PlayerControls input = null;
     private Vector2 moveVector = Vector2.zero;
     private Rigidbody2D rb = null;
-    private float moveSpeed = 10f;
+    public float moveSpeed = 10f;
 
     private void Awake()
     {
