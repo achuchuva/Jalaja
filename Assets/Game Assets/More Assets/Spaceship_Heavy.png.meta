@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Spaceship_Heavy_0: -9043239133673224926
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
