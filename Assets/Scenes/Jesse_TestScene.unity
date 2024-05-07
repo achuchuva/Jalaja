@@ -355,6 +355,7 @@ MonoBehaviour:
   prefabToInstantiate: {fileID: 1614143305}
   Player_01_0: {fileID: 857538370}
   laserSpeed: 10
+  laserLifetime: 5
 --- !u!1 &1614143305
 GameObject:
   m_ObjectHideFlags: 0

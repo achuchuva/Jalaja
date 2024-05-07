@@ -10,6 +10,7 @@ public class PlayerShoot : MonoBehaviour
     public GameObject Player_01_0;
     private PlayerMovement playerMovement;
     public float laserSpeed = 10f;
+    public float laserLifetime = 5f;
 
     void Start()
     {
@@ -46,5 +47,6 @@ public class PlayerShoot : MonoBehaviour
 
         laser.name = "laser";
         //laser.transform.SetParent(transform);
+        Destroy(laser, laserLifetime);
     }
 }
