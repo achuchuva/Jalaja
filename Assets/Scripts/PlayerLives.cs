@@ -7,6 +7,7 @@ public class PlayerLives : MonoBehaviour
     public int maxLives = 3;
     private int currentLives;
     public GameObject gameOverText;
+    public GameObject LivesCounter;
 
     private void Start()
     {
@@ -20,6 +21,22 @@ public class PlayerLives : MonoBehaviour
         if (currentLives <= 0)
         {
             GameOver();
+        }
+        else
+        {
+            DestroyLife();
+        }
+    }
+
+    private void DestroyLife()
+    {
+\        if (currentLives <= maxLives && currentLives >= 0)
+        {
+            Transform life = LivesCounter.transform.GetChild(currentLives);
+            if (life != null)
+            {
+                Destroy(life.gameObject);
+            }
         }
     }
 
