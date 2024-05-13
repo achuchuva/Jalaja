@@ -31,13 +31,5 @@ public class PlayerShoot : MonoBehaviour
             GameObject laser = Instantiate(laserPrefab, firePoint.position, spawnRotation);
             laser.GetComponent<Laser>().shootDirection = shootDirection;
         }
-
-        //Rigidbody2D laserRB = laser.GetComponent<Rigidbody2D>();
-        //if (laserRB == null)
-        //{
-        //    laserRB = laser.AddComponent<Rigidbody2D>();
-        //}
-
-        //Destroy(laser, laserLifetime);
     }
 }
