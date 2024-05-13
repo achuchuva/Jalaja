@@ -30,7 +30,7 @@ public class PlayerLives : MonoBehaviour
 
     private void DestroyLife()
     {
-\        if (currentLives <= maxLives && currentLives >= 0)
+        if (currentLives <= maxLives && currentLives >= 0)
         {
             Transform life = LivesCounter.transform.GetChild(currentLives);
             if (life != null)
