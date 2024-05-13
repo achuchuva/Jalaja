@@ -4,13 +4,12 @@ using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class PlayerShoot : MonoBehaviour
 {
-    public GameObject prefabToInstantiate;
-    private GameObject laser;
+    public GameObject laserPrefab;
     private PlayerControls input = null;
-    public GameObject Player_01_0;
     private PlayerMovement playerMovement;
     public float laserSpeed = 10f;
     public float laserLifetime = 5f;
+    public Transform[] firePoints;
 
     void Start()
     {
@@ -24,29 +23,21 @@ public class PlayerShoot : MonoBehaviour
 
     void Fire()
     {
-        //Vector3 spawnPosition = new Vector3(0f, 2f, 0f); // change to player 1 location
-        //Vector3 spawnPosition = Player_01_0.transform.position;
-        //spawnPosition.y += 1f;
         Vector2 shootDirection = playerMovement.GetShootDirection();
 
-        Vector3 spawnPosition = transform.position + (Vector3)shootDirection.normalized;
-
-        Quaternion spawnRotation = Quaternion.LookRotation(Vector3.forward, shootDirection);
-        laser = Instantiate(prefabToInstantiate, spawnPosition, spawnRotation);
-
-        laser.transform.SetParent(null);
-        laser.SetActive(true);
-
-        Rigidbody2D laserRB = laser.GetComponent<Rigidbody2D>();
-        if (laserRB == null)
+        foreach (Transform firePoint in firePoints)
         {
-            laserRB = laser.AddComponent<Rigidbody2D>();
+            Quaternion spawnRotation = Quaternion.LookRotation(Vector3.forward, shootDirection);
+            GameObject laser = Instantiate(laserPrefab, firePoint.position, spawnRotation);
+            laser.GetComponent<Laser>().shootDirection = shootDirection;
         }
 
-        laserRB.velocity = shootDirection.normalized * laserSpeed;
+        //Rigidbody2D laserRB = laser.GetComponent<Rigidbody2D>();
+        //if (laserRB == null)
+        //{
+        //    laserRB = laser.AddComponent<Rigidbody2D>();
+        //}
 
-        laser.name = "laser";
-        //laser.transform.SetParent(transform);
-        Destroy(laser, laserLifetime);
+        //Destroy(laser, laserLifetime);
     }
 }
