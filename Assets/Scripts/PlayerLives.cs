@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,8 +7,8 @@ public class PlayerLives : MonoBehaviour
 {
     public int maxLives = 3;
     private int currentLives;
-    public GameObject gameOverText;
-    public Text livesText;
+    public GameObject gameOverMenu;
+    public TextMeshProUGUI livesText;
     private Rigidbody2D rb;
 
     private void Start()
@@ -46,6 +47,8 @@ public class PlayerLives : MonoBehaviour
 
     private void GameOver()
     {
+        gameOverMenu.SetActive(true);
+        livesText.text = "x " + currentLives;
         Destroy(gameObject);
     }
 }
