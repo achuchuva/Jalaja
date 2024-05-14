@@ -20,20 +20,18 @@ public class Laser : MonoBehaviour
         Destroy(gameObject, lifeTime);
     }
 
-    void OnCollisionEnter2D(Collision2D hitInfo)
+    void OnCollisionEnter2D(Collision2D other)
     {
-        // Check if the bullet hits something that has a Health component
-        // Health enemy = hitInfo.GetComponent<Health>();
-        // if (enemy != null)
-        // {
-        //     enemy.TakeDamage(damage);
-        // }
+        if (other.collider.tag == "Enemy")
+        {
+            Destroy(other.gameObject);
+        }
 
         // Create an impact effect if specified
-        // if (impactEffect != null)
-        // {
-        //     Instantiate(impactEffect, transform.position, transform.rotation);
-        // }
+        if (impactEffect != null)
+        {
+            Instantiate(impactEffect, transform.position, transform.rotation);
+        }
 
         // Destroy the bullet
         Destroy(gameObject);

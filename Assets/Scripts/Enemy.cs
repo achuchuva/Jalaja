@@ -43,16 +43,15 @@ public class Enemy : MonoBehaviour
         else if (Vector2.Distance(transform.position, player.position) < stoppingDistance && Vector2.Distance(transform.position, player.position) > nearDistance)
         {
             transform.position = this.transform.position;
-        }
-
-        if (nextFireTime <= 0)
-        {
-            Shoot();
-            nextFireTime = fireRate;
-        }
-        else
-        {
-            nextFireTime -= Time.deltaTime;
+            if (nextFireTime <= 0)
+            {
+                Shoot();
+                nextFireTime = fireRate;
+            }
+            else
+            {
+                nextFireTime -= Time.deltaTime;
+            }
         }
         //if (Time.time >= nextFireTime)
         //{
