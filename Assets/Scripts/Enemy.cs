@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class Enemy : MonoBehaviour
 {
@@ -28,7 +30,7 @@ public class Enemy : MonoBehaviour
         if (player == null)
             return;
 
-        transform.right = player.position - transform.position + new Vector3(0f, 0f, 90f);
+        transform.right = player.position - transform.position;
 
         if (Vector2.Distance(transform.position, player.position) < nearDistance)
         {
@@ -36,7 +38,6 @@ public class Enemy : MonoBehaviour
         }
         else if (Vector2.Distance(transform.position, player.position) > stoppingDistance)
         {
-            transform.right = player.position - transform.position;
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         }
         else if (Vector2.Distance(transform.position, player.position) < stoppingDistance && Vector2.Distance(transform.position, player.position) > nearDistance)
@@ -46,8 +47,7 @@ public class Enemy : MonoBehaviour
 
         if (nextFireTime <= 0)
         {
-            Instantiate(bullet, firePoint.position, Quaternion.identity);
-            Debug.Log("Shooting bullet");
+            Shoot();
             nextFireTime = fireRate;
         }
         else
@@ -60,10 +60,12 @@ public class Enemy : MonoBehaviour
         //    nextFireTime = Time.time + 1f / fireRate; // Update next fire time
         //}
     }
-    //void Shoot()
-    //{
-    //    GameObject newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
-    //    Vector2 direction = (player.position - transform.position).normalized;
-    //    newBullet.GetComponent<Rigidbody2D>().velocity = direction * 10f;
-    //}
+
+    private void Shoot()
+    {
+        GameObject newBullet = Instantiate(bullet, firePoint.position, Quaternion.identity);
+        Vector3 relativePos = player.position - transform.position;
+        float angle = Mathf.Atan2(relativePos.y, relativePos.x) * Mathf.Rad2Deg;
+        newBullet.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+    }
 }

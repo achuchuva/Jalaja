@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class EnemyLaser : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class EnemyLaser : MonoBehaviour
     {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         rb.velocity = transform.right * speed;
+        transform.eulerAngles = transform.eulerAngles - (Vector3.forward * 90f);
     }
 
     private void OnCollisionEnter2D(Collision2D other)
@@ -27,7 +29,7 @@ public class EnemyLaser : MonoBehaviour
                 Instantiate(impactEffect, transform.position, Quaternion.identity);
             }
 
-            Destroy(gameObject);
         }
+        Destroy(gameObject);
     }
 }
