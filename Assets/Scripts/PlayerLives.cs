@@ -8,10 +8,20 @@ public class PlayerLives : MonoBehaviour
     private int currentLives;
     public GameObject gameOverText;
     public GameObject LivesCounter;
+    private Rigidbody2D rb;
 
     private void Start()
     {
         currentLives = maxLives;
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Asteroid"))
+        {
+            DecreaseLives();
+        }
     }
 
     public void DecreaseLives(int amount = 1)
