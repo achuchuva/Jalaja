@@ -178,3 +178,4 @@ MonoBehaviour:
   lifeTime: 5
   damage: 1
   impactEffect: {fileID: 0}
+  shootDirection: {x: 0, y: 0}

@@ -7,6 +7,7 @@ TagManager:
   - Bullet
   - Boundary
   - Asteroid
+  - Enemy_Bullet
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Bullet
   - Boundary
   - Enemy
-  - 
+  - Enemy_Bullet
   - 
   - 
   - 
