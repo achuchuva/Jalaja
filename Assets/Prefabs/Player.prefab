@@ -277,10 +277,6 @@ MonoBehaviour:
   laserLifetime: 5
   firePoints:
   - {fileID: 5978265254839919208}
-  - {fileID: 3282943674299000647}
-  - {fileID: 6055362039543704816}
-  - {fileID: 5427151757089761365}
-  - {fileID: 2729206056038326175}
 --- !u!58 &6386515023836882041
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -330,8 +326,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxLives: 3
-  gameOverText: {fileID: 0}
-  LivesCounter: {fileID: 0}
+  gameOverMenu: {fileID: 0}
+  livesText: {fileID: 0}
 --- !u!1 &7769891992576514377
 GameObject:
   m_ObjectHideFlags: 0

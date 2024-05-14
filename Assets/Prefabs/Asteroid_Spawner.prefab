@@ -152,9 +152,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   asteroidPrefab: {fileID: 6182363484067234877, guid: 268221956d2c36f4b91cfd8ee227790a, type: 3}
   spawnDistance: 12
-  spawnRate: 0.3
-  amountPerSpawn: 2
-  trajectoryVariance: 30
+  spawnRate: 2
+  amountPerSpawn: 1
+  trajectoryVariance: 12
 --- !u!1 &5664947319135844391
 GameObject:
   m_ObjectHideFlags: 0
