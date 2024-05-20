@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class PlayerShoot : MonoBehaviour
 {
@@ -10,6 +9,9 @@ public class PlayerShoot : MonoBehaviour
     public float laserSpeed = 10f;
     public float laserLifetime = 5f;
     public Transform[] firePoints;
+    public float fireCooldown = 0.5f;
+
+    private float lastFireTime;
 
     void Start()
     {
@@ -19,17 +21,23 @@ public class PlayerShoot : MonoBehaviour
         input.Player.Shoot.performed += ctx => Fire();
         playerMovement = GetComponent<PlayerMovement>();
 
+        lastFireTime = -fireCooldown;
     }
 
     void Fire()
     {
-        Vector2 shootDirection = playerMovement.GetShootDirection();
-
-        foreach (Transform firePoint in firePoints)
+        if (Time.time - lastFireTime >= fireCooldown)
         {
-            Quaternion spawnRotation = Quaternion.LookRotation(Vector3.forward, shootDirection);
-            GameObject laser = Instantiate(laserPrefab, firePoint.position, spawnRotation);
-            laser.GetComponent<Laser>().shootDirection = shootDirection;
+            Vector2 shootDirection = playerMovement.GetShootDirection();
+
+            foreach (Transform firePoint in firePoints)
+            {
+                Quaternion spawnRotation = Quaternion.LookRotation(Vector3.forward, shootDirection);
+                GameObject laser = Instantiate(laserPrefab, firePoint.position, spawnRotation);
+                laser.GetComponent<Laser>().shootDirection = shootDirection;
+            }
+
+            lastFireTime = Time.time;
         }
     }
 }

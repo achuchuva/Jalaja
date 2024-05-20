@@ -8,6 +8,8 @@ TagManager:
   - Boundary
   - Asteroid
   - Enemy_Bullet
+  - Enemy
+  - Powerup
   layers:
   - Default
   - TransparentFX
@@ -21,7 +23,7 @@ TagManager:
   - Boundary
   - Enemy
   - Enemy_Bullet
-  - 
+  - Powerup
   - 
   - 
   - 

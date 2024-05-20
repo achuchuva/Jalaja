@@ -43,6 +43,7 @@ public class PlayerLives : MonoBehaviour
     {
         currentLives += amount;
         currentLives = Mathf.Min(currentLives, maxLives);
+        livesText.text = "x " + currentLives;
     }
 
     private void GameOver()
