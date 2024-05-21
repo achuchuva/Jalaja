@@ -45,9 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerupPrefabs:
-  - {fileID: 6904166716337841593, guid: b85b1eca8952d8745803a007da6f0093, type: 3}
-  - {fileID: 6904166716337841593, guid: f22b302b67eeae94487b401d59ebdb4f, type: 3}
-  - {fileID: 6904166716337841593, guid: 77229b2038007bd4eb536ab011143b99, type: 3}
+  - {fileID: 5569398923306129188, guid: 1227f189bbeed5944bbbf8fdd18e437e, type: 3}
+  - {fileID: 6374297705696403983, guid: afbd59fa9d17b1b4c972cab37f84f297, type: 3}
+  - {fileID: 2005667947229436275, guid: 44dc6675a328dba49be71d6c29e2aa84, type: 3}
   spawnIntervalMin: 5
   spawnIntervalMax: 10
   xBounds: {x: -9, y: 9}

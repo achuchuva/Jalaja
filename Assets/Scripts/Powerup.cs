@@ -33,7 +33,7 @@ public class Powerup : MonoBehaviour
                 break;
 
             case PowerupType.FasterShooting:
-                player.GetComponent<PlayerShoot>().fireCooldown /= 1.1f;
+                player.GetComponent<PlayerShoot>().amountOfFirePoints += 1;
                 break;
         }
     }

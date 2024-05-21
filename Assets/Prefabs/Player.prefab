@@ -278,6 +278,11 @@ MonoBehaviour:
   laserLifetime: 5
   firePoints:
   - {fileID: 5978265254839919208}
+  - {fileID: 6055362039543704816}
+  - {fileID: 2729206056038326175}
+  - {fileID: 3282943674299000647}
+  - {fileID: 5427151757089761365}
+  amountOfFirePoints: 1
 --- !u!58 &6386515023836882041
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -341,7 +346,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46a2f432594e698438c52f9f425b2825, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
+  uiScoreText: {fileID: 0}
+  gameOverScoreText: {fileID: 0}
 --- !u!1 &7769891992576514377
 GameObject:
   m_ObjectHideFlags: 0
