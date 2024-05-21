@@ -34,8 +34,7 @@ public class Laser : MonoBehaviour
             if (score != null)
             {
                 score.AddEnemyScore();
-
-                Destroy(other.gameObject);
+                other.gameObject.GetComponent<Enemy>().TakeDamage();
             }
         }
         else if (other.collider.CompareTag("Asteroid"))
@@ -47,10 +46,10 @@ public class Laser : MonoBehaviour
         }
 
             if (impactEffect != null)
-        {
-            GameObject effect = Instantiate(impactEffect, transform.position, transform.rotation) as GameObject;
-            Destroy(effect, 5f);
-        }
+            {
+                GameObject effect = Instantiate(impactEffect, transform.position, transform.rotation) as GameObject;
+                Destroy(effect, 5f);
+            }
 
         Destroy(gameObject);
     }

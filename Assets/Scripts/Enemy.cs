@@ -11,17 +11,22 @@ public class Enemy : MonoBehaviour
     public float stoppingDistance = 20f;
     public float nearDistance = 5f;
     public float fireRate = 1f;
+    public int maxHealth = 1;
     private float nextFireTime;
+    private int health;
 
     [Header("References")]
     public GameObject bullet;
     private Transform player;
-    public Transform firePoint;
+    public Transform[] firePoints;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        health = maxHealth;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -53,18 +58,26 @@ public class Enemy : MonoBehaviour
                 nextFireTime -= Time.deltaTime;
             }
         }
-        //if (Time.time >= nextFireTime)
-        //{
-        //    Shoot();
-        //    nextFireTime = Time.time + 1f / fireRate; // Update next fire time
-        //}
+    }
+
+    public void TakeDamage()
+    {
+        animator.SetTrigger("TakeDamage");
+        health -= 1;
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Shoot()
     {
-        GameObject newBullet = Instantiate(bullet, firePoint.position, Quaternion.identity);
-        Vector3 relativePos = player.position - transform.position;
-        float angle = Mathf.Atan2(relativePos.y, relativePos.x) * Mathf.Rad2Deg;
-        newBullet.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        foreach (Transform firePoint in firePoints)
+        {
+            GameObject newBullet = Instantiate(bullet, firePoint.position, Quaternion.identity);
+            Vector3 relativePos = player.position - transform.position;
+            float angle = Mathf.Atan2(relativePos.y, relativePos.x) * Mathf.Rad2Deg;
+            newBullet.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        }
     }
 }

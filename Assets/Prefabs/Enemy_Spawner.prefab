@@ -44,6 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1759000c814b6524f84c51d3856ee1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 6800482911883241313, guid: 935295ae2d62dff438d192e81b710310, type: 3}
+  smallEnemyPrefab: {fileID: 6800482911883241313, guid: 935295ae2d62dff438d192e81b710310, type: 3}
+  mediumEnemyPrefab: {fileID: 6800482911883241313, guid: fb1828a5f16e60a4c8dc71c818102802, type: 3}
+  heavyEnemyPrefab: {fileID: 6800482911883241313, guid: eab85936511b0b24096557a403219073, type: 3}
   spawnRadius: 12
-  spawnRate: 0.4
+  initialSpawnRate: 0.4
+  rampingFactor: 1.05
