@@ -11,6 +11,7 @@ public class Laser : MonoBehaviour
     [HideInInspector]
     public Vector2 shootDirection;
     private Rigidbody2D rb;
+    private Score score;
 
     void Start()
     {
@@ -18,23 +19,39 @@ public class Laser : MonoBehaviour
         rb.velocity = transform.right * speed;
         rb.velocity = shootDirection.normalized * speed;
         Destroy(gameObject, lifeTime);
+
+        score = FindAnyObjectByType<Score>();
+        if (score == null)
+        {
+            Debug.LogWarning("Score script not found in the scene.");
+        }
     }
 
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.collider.tag == "Enemy")
         {
-            Destroy(other.gameObject);
+            if (score != null)
+            {
+                score.AddEnemyScore();
+
+                Destroy(other.gameObject);
+            }
+        }
+        else if (other.collider.CompareTag("Asteroid"))
+        {
+            if (score != null)
+            {
+                score.AddAsteroidScore();
+            }
         }
 
-        // Create an impact effect if specified
-        if (impactEffect != null)
+            if (impactEffect != null)
         {
             GameObject effect = Instantiate(impactEffect, transform.position, transform.rotation) as GameObject;
             Destroy(effect, 5f);
         }
 
-        // Destroy the bullet
         Destroy(gameObject);
     }
 }
