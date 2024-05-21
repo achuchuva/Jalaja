@@ -10,11 +10,13 @@ public class PlayerLives : MonoBehaviour
     public GameObject gameOverMenu;
     public TextMeshProUGUI livesText;
     private Rigidbody2D rb;
+    private Animator animator;
 
     private void Start()
     {
         currentLives = maxLives;
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -27,6 +29,7 @@ public class PlayerLives : MonoBehaviour
 
     public void DecreaseLives(int amount = 1)
     {
+        animator.SetTrigger("TakeDamage");
         currentLives -= amount;
 
         if (currentLives <= 0)

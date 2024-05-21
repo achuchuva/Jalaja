@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 6386515023836882041}
   - component: {fileID: 8158305370686615417}
   - component: {fileID: 847821736291378068}
+  - component: {fileID: 1328076232802336682}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -348,6 +349,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiScoreText: {fileID: 0}
   gameOverScoreText: {fileID: 0}
+--- !u!95 &1328076232802336682
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7287909282562834767}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 37996dc44e9cf4f4cad1b2d8c4bb3eba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &7769891992576514377
 GameObject:
   m_ObjectHideFlags: 0
