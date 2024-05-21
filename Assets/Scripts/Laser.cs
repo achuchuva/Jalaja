@@ -30,7 +30,8 @@ public class Laser : MonoBehaviour
         // Create an impact effect if specified
         if (impactEffect != null)
         {
-            Instantiate(impactEffect, transform.position, transform.rotation);
+            GameObject effect = Instantiate(impactEffect, transform.position, transform.rotation) as GameObject;
+            Destroy(effect, 5f);
         }
 
         // Destroy the bullet

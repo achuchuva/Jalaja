@@ -177,5 +177,5 @@ MonoBehaviour:
   speed: 10
   lifeTime: 5
   damage: 1
-  impactEffect: {fileID: 0}
+  impactEffect: {fileID: 6513348510307668893, guid: 506e28004cd73184a9b1a446fb0f9a8b, type: 3}
   shootDirection: {x: 0, y: 0}
