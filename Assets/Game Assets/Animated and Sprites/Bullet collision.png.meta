@@ -245,7 +245,7 @@ TextureImporter:
         width: 25
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,11 +262,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 31
-        y: 239
-        width: 18
-        height: 17
+        y: 214
+        width: 42
+        height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -274,27 +274,6 @@ TextureImporter:
       bones: []
       spriteID: e083102eceadb3330800000000000000
       internalID: 3691785030499121166
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_2
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 247
-        width: 18
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 180408d447e411040800000000000000
-      internalID: 4616557354454892673
       vertices: []
       indices: 
       edges: []
@@ -308,7 +287,7 @@ TextureImporter:
         width: 26
         height: 26
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -324,12 +303,12 @@ TextureImporter:
       name: Bullet collision_4
       rect:
         serializedVersion: 2
-        x: 111
+        x: 112
         y: 215
-        width: 50
+        width: 39
         height: 41
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -342,120 +321,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet collision_5
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 239
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 604ce809cba4a8d50800000000000000
-      internalID: 6740281966052951046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_6
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 247
-        width: 10
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: eccd690c55b661d30800000000000000
-      internalID: 4401823701848743118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_7
-      rect:
-        serializedVersion: 2
-        x: 191
-        y: 239
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fff0f0793e2073df0800000000000000
-      internalID: -200688481879519233
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_8
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 215
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a59a0c4cfc014c7f0800000000000000
-      internalID: -593330766360827558
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_9
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 223
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: edb8c6d6b794f88b0800000000000000
-      internalID: -5147815054595552290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Bullet collision_10
       rect:
         serializedVersion: 2
-        x: 167
-        y: 215
-        width: 26
-        height: 26
+        x: 152
+        y: 200
+        width: 56
+        height: 56
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -468,204 +342,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bullet collision_11
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 223
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cc1b6db7f4f51d810800000000000000
-      internalID: 1788315322027520460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_12
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 199
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8806dace8029832d0800000000000000
-      internalID: -3298726160020709240
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_13
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 207
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d94790a6a864da4b0800000000000000
-      internalID: -5427604415613143907
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_14
-      rect:
-        serializedVersion: 2
-        x: 175
-        y: 199
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 28517e6bd2e341f90800000000000000
-      internalID: -6983888756081748606
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_15
-      rect:
-        serializedVersion: 2
-        x: 191
-        y: 207
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 20733bc62d3980d20800000000000000
-      internalID: 3245006063496541954
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_16
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 191
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5207d15546ca3310800000000000000
-      internalID: 1385637836397937243
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_17
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 175
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 22800b42fb3721f30800000000000000
-      internalID: 4544822238761715746
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_18
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 175
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f8b37946c59d3bac0800000000000000
-      internalID: -3840487066369049713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_19
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 143
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 294e1057a7edf28a0800000000000000
-      internalID: -6327594333901822830
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Bullet collision_20
       rect:
         serializedVersion: 2
-        x: 23
-        y: 127
-        width: 42
-        height: 42
+        x: 0
+        y: 104
+        width: 88
+        height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -677,101 +362,42 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Bullet collision_21
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 143
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e413c42bd3bb9ea30800000000000000
-      internalID: 4245129997432140110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_22
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 119
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0c01544453cff3e30800000000000000
-      internalID: 4485581059593146560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_23
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 111
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: de877cff27c539260800000000000000
-      internalID: 7103122686280693997
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bullet collision_24
-      rect:
-        serializedVersion: 2
-        x: 39
-        y: 103
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 13fb94f3de19c0d70800000000000000
-      internalID: 9010737402616594225
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ad0f8d66eb796024e816ef95ec3da3b9
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bullet collision_0: -8359541452055215624
+      Bullet collision_1: 3691785030499121166
+      Bullet collision_10: 8659475096929112941
+      Bullet collision_11: 1788315322027520460
+      Bullet collision_12: -3298726160020709240
+      Bullet collision_13: -5427604415613143907
+      Bullet collision_14: -6983888756081748606
+      Bullet collision_15: 3245006063496541954
+      Bullet collision_16: 1385637836397937243
+      Bullet collision_17: 4544822238761715746
+      Bullet collision_18: -3840487066369049713
+      Bullet collision_19: -6327594333901822830
+      Bullet collision_2: 4616557354454892673
+      Bullet collision_20: -1659970905695262817
+      Bullet collision_21: 4245129997432140110
+      Bullet collision_22: 4485581059593146560
+      Bullet collision_23: 7103122686280693997
+      Bullet collision_24: 9010737402616594225
+      Bullet collision_3: 7810696400750568724
+      Bullet collision_4: 432886648454196404
+      Bullet collision_5: 6740281966052951046
+      Bullet collision_6: 4401823701848743118
+      Bullet collision_7: -200688481879519233
+      Bullet collision_8: -593330766360827558
+      Bullet collision_9: -5147815054595552290
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

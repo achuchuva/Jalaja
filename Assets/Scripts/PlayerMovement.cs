@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveVector = Vector2.zero;
     private Rigidbody2D rb = null;
     public float moveSpeed = 10f;
+    public GameObject trail;
+    public Transform smokePoint;
+    private float nextSmokeTime;
 
     private void Awake()
     {
@@ -33,9 +36,16 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = moveSpeed * moveVector;
+        if (nextSmokeTime <= Time.time)
+        {
+            nextSmokeTime = Time.time + 1f;
+            if (trail != null)
+            {
+                GameObject effect = Instantiate(trail, smokePoint.position, transform.rotation) as GameObject;
+                Destroy(effect, 2f);
+            }
+        }
     }
-
-
 
     private void OnMovementPerformed(InputAction.CallbackContext value)
     {

@@ -5,7 +5,7 @@ public class EnemyLaser : MonoBehaviour
 {
     public float speed = 10f;
     public int damage = 1;
-    public GameObject impactEffect;
+    public GameObject bulletExplosion;
 
     private void Start()
     {
@@ -24,12 +24,18 @@ public class EnemyLaser : MonoBehaviour
                 playerLives.DecreaseLives(damage);
             }
 
-            if (impactEffect != null)
-            {
-                Instantiate(impactEffect, transform.position, Quaternion.identity);
-            }
-
         }
+        else if (other.collider.tag == "Enemy")
+        {
+            other.gameObject.GetComponent<Enemy>().TakeDamage();
+        }
+
+        if (bulletExplosion != null)
+        {
+            GameObject effect = Instantiate(bulletExplosion, transform.position, transform.rotation) as GameObject;
+            Destroy(effect, 2f);
+        }
+        AudioManager.PlaySound("Explosion");
         Destroy(gameObject);
     }
 }

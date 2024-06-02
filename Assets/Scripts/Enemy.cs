@@ -16,7 +16,9 @@ public class Enemy : MonoBehaviour
     private int health;
 
     [Header("References")]
+    public SpriteRenderer spriteRenderer;
     public GameObject bullet;
+    public GameObject explosion;
     private Transform player;
     public Transform[] firePoints;
     private Animator animator;
@@ -74,18 +76,33 @@ public class Enemy : MonoBehaviour
         health -= 1;
         if (health <= 0)
         {
+            if (explosion != null)
+            {
+                GameObject effect = Instantiate(explosion, transform.position, transform.rotation) as GameObject;
+                Destroy(effect, 5f);
+            }
             Destroy(gameObject);
         }
     }
 
     private void Shoot()
     {
-        foreach (Transform firePoint in firePoints)
+        if (IsVisibleFrom(spriteRenderer))
         {
-            GameObject newBullet = Instantiate(bullet, firePoint.position, Quaternion.identity);
-            Vector3 relativePos = player.position - transform.position;
-            float angle = Mathf.Atan2(relativePos.y, relativePos.x) * Mathf.Rad2Deg;
-            newBullet.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            AudioManager.PlaySound("Enemy");
+            foreach (Transform firePoint in firePoints)
+            {
+                GameObject newBullet = Instantiate(bullet, firePoint.position, Quaternion.identity);
+                Vector3 relativePos = player.position - transform.position;
+                float angle = Mathf.Atan2(relativePos.y, relativePos.x) * Mathf.Rad2Deg;
+                newBullet.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            }
         }
+    }
+
+    private bool IsVisibleFrom(Renderer renderer)
+    {
+        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(Camera.main);
+        return GeometryUtility.TestPlanesAABB(planes, renderer.bounds);
     }
 }

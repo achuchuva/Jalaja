@@ -237,12 +237,12 @@ TextureImporter:
       name: Asteroid Laser Collision_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 215
-        width: 42
-        height: 41
+        x: 0
+        y: 185
+        width: 74
+        height: 71
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -258,12 +258,12 @@ TextureImporter:
       name: Asteroid Laser Collision_1
       rect:
         serializedVersion: 2
-        x: 95
-        y: 247
-        width: 10
-        height: 9
+        x: 78
+        y: 190
+        width: 75
+        height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -279,12 +279,12 @@ TextureImporter:
       name: Asteroid Laser Collision_2
       rect:
         serializedVersion: 2
-        x: 119
-        y: 239
-        width: 10
-        height: 10
+        x: 0
+        y: 7
+        width: 172
+        height: 131
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -300,12 +300,12 @@ TextureImporter:
       name: Asteroid Laser Collision_3
       rect:
         serializedVersion: 2
-        x: 143
-        y: 239
-        width: 10
-        height: 10
+        x: 166
+        y: 175
+        width: 56
+        height: 81
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -317,437 +317,41 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_4
-      rect:
-        serializedVersion: 2
-        x: 191
-        y: 247
-        width: 10
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 83f4ff9f90deee730800000000000000
-      internalID: 4030419343647919928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_5
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 223
-        width: 18
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ef7c33489c13b3bc0800000000000000
-      internalID: -3802390718808078338
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_6
-      rect:
-        serializedVersion: 2
-        x: 95
-        y: 231
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9ec1d6ec56afb4c80800000000000000
-      internalID: -8337294969984443159
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_7
-      rect:
-        serializedVersion: 2
-        x: 191
-        y: 223
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 892e7ae18034c94c0800000000000000
-      internalID: -4279471843755695464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 207
-        width: 17
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aaf3b8fa944d871b0800000000000000
-      internalID: -5658539518848188502
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_9
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 207
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7e3f44d1e64a0a130800000000000000
-      internalID: 3576038896976589799
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_10
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 191
-        width: 34
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c42a2a940e0fbc570800000000000000
-      internalID: 8488142768808567372
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_11
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 199
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 262865257f6959700800000000000000
-      internalID: 546508918777872994
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_12
-      rect:
-        serializedVersion: 2
-        x: 207
-        y: 199
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b4abddeff028aae00800000000000000
-      internalID: 1056800067783866955
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_13
-      rect:
-        serializedVersion: 2
-        x: 47
-        y: 191
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 80c3032f9749b0ff0800000000000000
-      internalID: -68798117818909688
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_14
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 191
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c4f34f10804a9200800000000000000
-      internalID: 187533253513835717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_15
-      rect:
-        serializedVersion: 2
-        x: 119
-        y: 167
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 143dbdf1bc2db58b0800000000000000
-      internalID: -5162300777995447487
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_16
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 175
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8eee18d6bfffc2e50800000000000000
-      internalID: 6786080193879600872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_17
-      rect:
-        serializedVersion: 2
-        x: 15
-        y: 143
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7487c09c12391a650800000000000000
-      internalID: 6242432331828459591
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_18
-      rect:
-        serializedVersion: 2
-        x: 183
-        y: 151
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 341a9c8b53692cd70800000000000000
-      internalID: 9061970557700514115
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_19
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 127
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7bc19c82d807ba5e0800000000000000
-      internalID: -1897299066429563721
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_20
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 119
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4f34b5310bd6f1780800000000000000
-      internalID: -8710122551304829964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_21
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 63
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fc581a980af4c26e0800000000000000
-      internalID: -1861024995088431665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_22
-      rect:
-        serializedVersion: 2
-        x: 159
-        y: 47
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d5395e1c7520ca0a0800000000000000
-      internalID: -6869112755708390563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Asteroid Laser Collision_23
-      rect:
-        serializedVersion: 2
-        x: 23
-        y: 7
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0ed578d691cd69770800000000000000
-      internalID: 8617316938789903840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b1bb10819387ba24b99a630153a08b38
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Asteroid Laser Collision_0: -7192082903901056713
+      Asteroid Laser Collision_1: -6337117391032522550
+      Asteroid Laser Collision_10: 8488142768808567372
+      Asteroid Laser Collision_11: 546508918777872994
+      Asteroid Laser Collision_12: 1056800067783866955
+      Asteroid Laser Collision_13: -68798117818909688
+      Asteroid Laser Collision_14: 187533253513835717
+      Asteroid Laser Collision_15: -5162300777995447487
+      Asteroid Laser Collision_16: 6786080193879600872
+      Asteroid Laser Collision_17: 6242432331828459591
+      Asteroid Laser Collision_18: 9061970557700514115
+      Asteroid Laser Collision_19: -1897299066429563721
+      Asteroid Laser Collision_2: 6290703858509240573
+      Asteroid Laser Collision_20: -8710122551304829964
+      Asteroid Laser Collision_21: -1861024995088431665
+      Asteroid Laser Collision_22: -6869112755708390563
+      Asteroid Laser Collision_23: 8617316938789903840
+      Asteroid Laser Collision_3: 5496557303299435823
+      Asteroid Laser Collision_4: 4030419343647919928
+      Asteroid Laser Collision_5: -3802390718808078338
+      Asteroid Laser Collision_6: -8337294969984443159
+      Asteroid Laser Collision_7: -4279471843755695464
+      Asteroid Laser Collision_8: -5658539518848188502
+      Asteroid Laser Collision_9: 3576038896976589799
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

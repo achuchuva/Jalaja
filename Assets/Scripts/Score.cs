@@ -9,13 +9,19 @@ public class Score : MonoBehaviour
 
     public void AddEnemyScore()
     {
-        score += 10;
+        score += 25;
         UpdateScoreText();
     }
 
     public void AddAsteroidScore()
     {
-        score += 5;
+        score += 10;
+        UpdateScoreText();
+    }
+
+    public void AddBulletScore()
+    {
+        score += 10;
         UpdateScoreText();
     }
 

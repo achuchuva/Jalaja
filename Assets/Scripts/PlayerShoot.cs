@@ -26,6 +26,7 @@ public class PlayerShoot : MonoBehaviour
 
     void Fire()
     {
+        AudioManager.PlaySound("Player");
         Vector2 shootDirection = playerMovement.GetShootDirection();
 
         int firePointsUsed = 0;

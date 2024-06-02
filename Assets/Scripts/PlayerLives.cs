@@ -7,6 +7,7 @@ public class PlayerLives : MonoBehaviour
 {
     public int maxLives = 3;
     private int currentLives;
+    public GameObject explosion;
     public GameObject gameOverMenu;
     public TextMeshProUGUI livesText;
     private Rigidbody2D rb;
@@ -45,7 +46,6 @@ public class PlayerLives : MonoBehaviour
     public void IncreaseLives(int amount = 1)
     {
         currentLives += amount;
-        currentLives = Mathf.Min(currentLives, maxLives);
         livesText.text = "x " + currentLives;
     }
 
@@ -53,6 +53,11 @@ public class PlayerLives : MonoBehaviour
     {
         gameOverMenu.SetActive(true);
         livesText.text = "x " + currentLives;
+        if (explosion != null)
+        {
+            GameObject effect = Instantiate(explosion, transform.position, transform.rotation) as GameObject;
+            Destroy(effect, 5f);
+        }
         Destroy(gameObject);
     }
 }

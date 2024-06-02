@@ -48,5 +48,5 @@ MonoBehaviour:
   mediumEnemyPrefab: {fileID: 6800482911883241313, guid: fb1828a5f16e60a4c8dc71c818102802, type: 3}
   heavyEnemyPrefab: {fileID: 6800482911883241313, guid: eab85936511b0b24096557a403219073, type: 3}
   spawnRadius: 12
-  initialSpawnRate: 0.4
-  rampingFactor: 1.05
+  initialSpawnRate: 0.3
+  rampingFactor: 1.03

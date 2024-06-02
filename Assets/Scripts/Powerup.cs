@@ -15,6 +15,7 @@ public class Powerup : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            AudioManager.PlaySound("Powerup");
             ApplyPowerup(other.gameObject);
             Destroy(gameObject);
         }

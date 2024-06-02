@@ -6,7 +6,8 @@ public class Laser : MonoBehaviour
     public float speed = 10f;
     public float lifeTime = 5f;
     public int damage = 1;
-    public GameObject impactEffect;
+    public GameObject asteroidExplosion;
+    public GameObject bulletExplosion;
 
     [HideInInspector]
     public Vector2 shootDirection;
@@ -36,6 +37,12 @@ public class Laser : MonoBehaviour
                 score.AddEnemyScore();
                 other.gameObject.GetComponent<Enemy>().TakeDamage();
             }
+
+            if (bulletExplosion != null)
+            {
+                GameObject effect = Instantiate(bulletExplosion, transform.position, transform.rotation) as GameObject;
+                Destroy(effect, 5f);
+            }
         }
         else if (other.collider.CompareTag("Asteroid"))
         {
@@ -43,14 +50,28 @@ public class Laser : MonoBehaviour
             {
                 score.AddAsteroidScore();
             }
-        }
 
-            if (impactEffect != null)
+            if (asteroidExplosion != null)
             {
-                GameObject effect = Instantiate(impactEffect, transform.position, transform.rotation) as GameObject;
-                Destroy(effect, 5f);
+                GameObject effect = Instantiate(asteroidExplosion, transform.position, transform.rotation) as GameObject;
+                Destroy(effect, 2f);
+            }
+        }
+        else if (other.collider.CompareTag("Bullet"))
+        {
+            if (score != null)
+            {
+                score.AddBulletScore();
             }
 
+            if (bulletExplosion != null)
+            {
+                GameObject effect = Instantiate(bulletExplosion, transform.position, transform.rotation) as GameObject;
+                Destroy(effect, 2f);
+            }
+        }
+
+        AudioManager.PlaySound("Explosion");
         Destroy(gameObject);
     }
 }

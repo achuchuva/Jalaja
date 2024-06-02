@@ -230,12 +230,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 078c824b73100d54c9e5390716505c45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 1.5
   stoppingDistance: 5
   nearDistance: 2
   fireRate: 1
   maxHealth: 5
+  spriteRenderer: {fileID: 1036746609928843031}
   bullet: {fileID: 8829448193510903144, guid: 18eb28204bf6d204f9f8f8bc26b8ea9d, type: 3}
+  explosion: {fileID: 6513348510307668893, guid: 506e28004cd73184a9b1a446fb0f9a8b, type: 3}
   firePoints:
   - {fileID: 3613324435909060461}
   - {fileID: 9178098545282299134}

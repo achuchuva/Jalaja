@@ -177,5 +177,7 @@ MonoBehaviour:
   speed: 10
   lifeTime: 5
   damage: 1
-  impactEffect: {fileID: 6513348510307668893, guid: 506e28004cd73184a9b1a446fb0f9a8b, type: 3}
+  explosion: {fileID: 6513348510307668893, guid: 506e28004cd73184a9b1a446fb0f9a8b, type: 3}
+  asteroidExplosion: {fileID: 3751376059450277592, guid: 372669c53fb940842a39588b0b63fb24, type: 3}
+  bulletExplosion: {fileID: 7288089223070302494, guid: fdb0b499ee43d9e4890037d9db47ef02, type: 3}
   shootDirection: {x: 0, y: 0}

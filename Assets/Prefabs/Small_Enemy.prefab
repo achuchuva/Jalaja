@@ -138,8 +138,10 @@ MonoBehaviour:
   stoppingDistance: 5
   nearDistance: 2
   fireRate: 1
-  maxHealth: 2
+  maxHealth: 1
+  spriteRenderer: {fileID: 1036746609928843031}
   bullet: {fileID: 8829448193510903144, guid: 18eb28204bf6d204f9f8f8bc26b8ea9d, type: 3}
+  explosion: {fileID: 6513348510307668893, guid: 506e28004cd73184a9b1a446fb0f9a8b, type: 3}
   firePoints:
   - {fileID: 3613324435909060461}
 --- !u!58 &-839108341188429739
